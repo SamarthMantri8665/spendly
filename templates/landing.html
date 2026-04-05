@@ -19,7 +19,7 @@
         </p>
         <div class="hero-actions">
             <a href="{{ url_for('register') }}" class="btn-primary">Create free account</a>
-            <a href="#how-it-works" class="btn-secondary">See how it works</a>
+            <a href="#" class="btn-secondary" id="howItWorksBtn">See how it works</a>
         </div>
     </div>
     <div class="hero-dashboard">
@@ -97,5 +97,21 @@
         <a href="{{ url_for('register') }}" class="btn-primary">Create free account</a>
     </div>
 </section>
+
+<!-- How It Works Modal -->
+<div class="modal-overlay" id="howItWorksModal">
+    <div class="modal-container">
+        <button class="modal-close" id="modalCloseBtn">&times;</button>
+        <div class="modal-video-wrapper">
+            <iframe
+                id="modalVideo"
+                src=""
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
